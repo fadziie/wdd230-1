@@ -21,23 +21,30 @@
         <hr>
 			<ul>
 				<li>Lesson 02: <a href="lesson2/design-principles.html">Design Principles</a></li>
-				<li> Lesson 03: <a href="lesson3.html">Title</a></li>
-				<li>Lesson 04: <a href="lesson4.html">Title</a></li>
-				<li>Lesson 05: <a href="lesson5.html">Title</a></li>
-				<li>Lesson 06: <a href="lesson6.html">Title</a></li>
-				<li>Lesson 07: <a href="lesson7.html">Title</a></li>
-				<li>Lesson 08: <a href="lesson8.html">Title</a></li>
-				<li>Lesson 09: <a href="lesson9.html">Title</a></li>
-				<li>Lesson 10: <a href="lesson10.html">Title</a></li>
-				<li>Lesson 12: <a href="lesson11.html">Title</a></li>
+				<li> Lesson 03: <a href="#">Title</a></li>
+				<li>Lesson 04: <a href="#">Title</a></li>
+				<li>Lesson 05: <a href="#">Title</a></li>
+				<li>Lesson 06: <a href="#">Title</a></li>
+				<li>Lesson 07: <a href="#">Title</a></li>
+				<li>Lesson 08: <a href="#">Title</a></li>
+				<li>Lesson 09: <a href="#">Title</a></li>
+				<li>Lesson 10: <a href="#">Title</a></li>
+				<li>Lesson 12: <a href="#">Title</a></li>
 				
 			</ul>
-		</nav>
 	</main>
 	<footer class=" footer">
+		<p>Copyright &copy; <span id="currentYear"></span></p>
 		<p>&copy; 2023 | Knox Tafadzwa Mangwiro | Durban</p>
 		<p class="last-update" id="lastModified"></p>
 	</footer>
+	<script>
+		// Get the current year
+		const currentYear = new Date().getFullYear();
+	  
+		// Set the year in the footer
+		document.getElementById('currentYear').textContent = currentYear;
+	  </script>
 	<script src="scripts/index.js" defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
