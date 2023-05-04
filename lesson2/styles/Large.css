@@ -1,0 +1,6 @@
+@media screen and (min-width: 1200px) { /*large devices*/
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+    }
+}

@@ -2,17 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Design Principles Assignment</title>
-    <meta name="description" content="Design Principles Assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Design Principles Assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 	<!-- Google Font API -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<!-- CSS Normalization file -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/Large.css">
+	<style>
+		html, body {
+		  overflow-x: hidden; /* hide horizontal scrollbar */
+		}
+		
+		/* limit content width to 1000 pixels */
+		main {
+		  max-width: 1000px;
+		  margin: 0 auto; /* center content horizontally */
+		}
+	  </style>
+	<title>Design Principles Assignment</title>
 </head>
 <body>
     <header class="header">
         <h1>Design Principles</h1>
+		<h2>Knox Tafadzwa Mangwiro</h2>
     </header>
     <main class="main">
 	<div class="container">
@@ -43,9 +58,10 @@
         </div>
     </main>
 	<footer class="footer">
-        <p>
-            &copy; 2023 | Knox Tafadzwa Mangwiro | South Africa | 
-        </p>
+        <p>&copy; 2023 | Knox Tafadzwa Mangwiro | South Africa | </p>
+		<p class="last-update" id="lastModified"></p>
+		<script src="scripts/index.js"></script>
+        
     </footer>
     </body>
     </html>
