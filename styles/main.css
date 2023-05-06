@@ -3,32 +3,44 @@ body{
     padding: .5rem;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    
 }
 .header {
 	display: flex;
-    background-color: #0f9ba5;
+    background-color: #053238;
 	color: #ffffff;
 	justify-content: center;
 	padding: 1rem;
 	border-radius: 1rem;
+
 }
+
 
 .profile-picture {
 	position: absolute;
 	left: 5%;
 	box-shadow: 3px 5px 32px 8px rgba(0, 0, 0, 0.36);
+    height: 75px;
+    width: 9%;
 }
 .main {
     padding: 1rem;
+
 }
 
+.container {
+    max-width: 1200px; /* adjust the value as needed */
+    margin: 0 auto; /* center the container horizontally */
+  }
+
 .footer {
-    background-color:#0f9ba5 ;
+    background-color:#053238 ;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
-    font-size: .9rem;
+    font-size: 1.5rem;
+    text-shadow: grey;
 }
 .footer span {
     text-decoration: underline;

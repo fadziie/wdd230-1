@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WDD230 Assignment Portal</title>
-    <meta name="description" content="Assignment portal for Knox Tafadzwa Mangwiro in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
+	<meta name="author" content="Knox Tafadzwa Mangwiro">
+	<meta name="description" content="Assignment portal for Knox Tafadzwa Mangwiro in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
     <link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet"  href="styles/main.css">
 	<link rel="stylesheet"  href="styles/normalize.css">
 	<link rel = "stylesheet" href="styles/medium.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>WDD230 Assignment Portal</title>
 </head>
 <body>
 	<header class="header">
@@ -17,8 +19,9 @@
 		<img class="profile-picture" src="images/knox.jpg" alt="knox selfie" height = 85>
 	</header>
     <main class="main">
+		<div class="container">
         <h2> WDD230 : Assignment Portal</h2>
-        <hr>
+        <nav class="navigation">
 			<ul>
 				<li>Lesson 02: <a href="lesson2/design-principles.html">Design Principles</a></li>
 				<li> Lesson 03: <a href="#">Title</a></li>
@@ -32,26 +35,13 @@
 				<li>Lesson 12: <a href="#">Title</a></li>
 				
 			</ul>
+		</nav>
+		</div>
 	</main>
 	<footer class=" footer">
-		<p>Copyright &copy; <span id="currentYear"></span></p>
-		<p>&copy; 2023 | Knox Tafadzwa Mangwiro | Durban</p>
+		<p>&copy; Knox Tafadzwa Mangwiro | Durban</p>
 		<p class="last-update" id="lastModified"></p>
+		<script src="scripts/index.js"></script>
 	</footer>
-	<script>
-		// Get the current year
-		const currentYear = new Date().getFullYear();
-	  
-		// Set the year in the footer
-		document.getElementById('currentYear').textContent = currentYear;
-	  </script>
-	<script src="scripts/index.js" defer></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-        google: {
-            families: ['Roboto'] 
-        }});
-    </script>
 </body>
 </html>
