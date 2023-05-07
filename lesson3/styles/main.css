@@ -1,0 +1,91 @@
+/* Set color scheme */
+:root {
+    --blue: #000080;
+    --green: #8bc34a;
+    --gray: #555;
+  }
+  
+  /* Apply color scheme */
+  header, footer {
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  main {
+    background-color: var(--green);
+    color: var(--gray);
+  }
+  
+  /* Set typography */
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+  }
+  
+  /* Apply typography */
+  h1 {
+    color: var(--blue);
+  }
+  
+  h2, h3 {
+    color: white;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 2px solid var(--blue);
+  }
+  
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000080;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Mobile Menu */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav li {
+      margin: 0.5rem 0;
+    }
+  }
+  
