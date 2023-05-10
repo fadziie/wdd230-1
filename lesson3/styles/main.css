@@ -19,6 +19,9 @@
   /* Set typography */
   body {
     font-family: "Helvetica Neue", sans-serif;
+    text-shadow: 1px 1px #201f1f;
+    font-weight: bold;
+    line-height: 1.5;
     
   }
   
@@ -96,6 +99,15 @@ nav {
   nav a {
     color: white;
     text-decoration: none;
+  }
+
+  main {
+    padding: 1px;
+
+  }
+
+  footer{
+    padding: 1px;
   }
   
   /* Mobile Menu */
