@@ -1,8 +1,8 @@
 /* Set color scheme */
 :root {
     --blue: #000080;
-    --green: #8bc34a;
-    --gray: #555;
+    --green: #497a10;
+    --gray: #201f1f;
   }
   
   /* Apply color scheme */
@@ -19,6 +19,7 @@
   /* Set typography */
   body {
     font-family: "Helvetica Neue", sans-serif;
+    
   }
   
   h1, h2, h3 {
@@ -54,6 +55,31 @@ nav {
     background-color: #000080;
     color: white;
     padding: 1rem;
+  }
+
+  #menu-toggle {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu li {
+    list-style: none;
+  }
+  #menu li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
   }
   
   nav ul {
