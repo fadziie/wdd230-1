@@ -13,7 +13,7 @@
   
   main {
     background-color: #497a10;
-    color: #201f1f;
+    color: #fff;
   }
   
   /* Set typography */
@@ -28,11 +28,12 @@
   h1, h2, h3 {
     font-family: "Georgia", serif;
     font-weight: bold;
+    
   }
   
   /* Apply typography */
   h1 {
-    color: #000080;
+    color: white;
   }
   
   h2, h3 {
