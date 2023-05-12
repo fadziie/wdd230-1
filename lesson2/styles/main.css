@@ -1,3 +1,12 @@
+html, body {
+    overflow-x: hidden; /* hide horizontal scrollbar */
+  }
+  
+  /* limit content width to 1000 pixels */
+  main {
+    max-width: 1000px;
+    margin: 0 auto; /* center content horizontally */
+  }
 body{
     margin: .5rem;
     padding: .5rem;
