@@ -156,12 +156,12 @@ main section, main div {
 }
 
 main section p, main div p {
-    color: #497a10;
+    color: #294007;
     padding: 5%;
 }
 
 main section h2 {
-    color: #497a10;
+    color:#294007 ;
 }
 
 /*Home Styles*/
@@ -215,7 +215,7 @@ main section h2 {
 
 #condition {
     display: block;
-    color: #497a10;
+    color: #294007;
     margin-top: -25px;
 }
 
@@ -337,7 +337,7 @@ form fieldset {
 }
 
 form legend {
-    color: #497a10;
+    color: #294007;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -376,7 +376,7 @@ form label.description textarea {
 
 form label.description {
     display: block;
-    color: #497a10;
+    color:#294007 ;
     padding: .75rem 0;
 }
 
