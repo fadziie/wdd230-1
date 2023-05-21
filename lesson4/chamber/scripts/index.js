@@ -5,9 +5,9 @@ let dateTime = `Last Updated: ${fullDate} ${time}`;
 document.getElementById("lastModified").innerHTML = dateTime;
 var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
-const menuToggle = document.getElementById('menu-toggle');
+const toggleMenu = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
-menuToggle.addEventListener('click', function() {
+toggleMenu.addEventListener('click', function() {
   menu.classList.toggle('active');
 });
 
@@ -15,18 +15,18 @@ menuToggle.addEventListener('click', function() {
 function updateBanner() {
   let date1 = document.getElementById("currentTime");
   const now = new Date();
+  const dayOfWeek = now.getDay();
   const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
   const formattedDate = new Intl.DateTimeFormat("en-UK", options).format(now);
   date1.innerHTML = formattedDate;
-
-  if (now.getDay() < 3 && now.getDay() > 0) {
-    document.getElementById("meetAndGreet").classList.add("activeBanner");
+  if (dayOfWeek === 1 || dayOfWeek === 2) {
+    document.getElementById("meetAndGreet").style.display = "block";
+  } else {
+    document.getElementById("meetAndGreet").style.display = "none";
   }
 }
 
-if (now.getDay() < 3 && now.getDay() > 0){
-  document.getElementById("meetAndGreet").classList.toggle("activeBanner");
-}
+  
 const images = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
@@ -64,3 +64,4 @@ if("IntersectionObserver" in window) {
 }
 else {
 }
+
