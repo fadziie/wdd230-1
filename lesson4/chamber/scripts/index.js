@@ -5,11 +5,25 @@ let dateTime = `Last Updated: ${fullDate} ${time}`;
 document.getElementById("lastModified").innerHTML = dateTime;
 var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
-const toggleMenu = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
-toggleMenu.addEventListener('click', function() {
-  menu.classList.toggle('active');
-});
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const primaryNav = document.getElementById('primaryNav');
+  
+    
+      
+    
+  
+    hamburgerBtn.addEventListener('click',function () {
+      primaryNav.classList.toggle('open');
+    });
+    });
+  
+  
+
+
+ 
 
 //Current time
 function updateBanner() {
