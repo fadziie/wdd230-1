@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  name="author" content="Knox Tafadzwa Mangwiro">
+	<meta name="description" content="Progress loading of images for Knox Tafadzwa Mangwiro in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
+  <title>Lazy Load Example</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
+  </head>
+<body>
+  <h1>Lazy Load Example</h1>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://placekitten.com/300/400" alt="Image 1">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src=" https://placebear.com/300/400" alt="Image 2">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://placebeard.it/300/400" alt="Image 3">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/car" alt="Image 4">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/dog" alt="Image 5">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/Paris" alt="Image 6">
+    </picture>
+  </div>
+  <script src="scripts/lazyload.js" defer></script>
+</body>
+</html>
