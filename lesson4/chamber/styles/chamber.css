@@ -19,6 +19,7 @@ body {
 img {
     width: 100%;
     /* color: white; */
+    object-fit: cover;
 }
 
 /*Header Styles*/
@@ -197,7 +198,8 @@ main section h2 {
 }
 
 #hero-banner img {
-    margin-bottom: -0.25rem;
+    background-image: url(../images/wdd230-org_large.webp);
+    background-size: cover;
 }
 
 .event h3{
