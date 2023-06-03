@@ -40,42 +40,55 @@ function updateBanner() {
   }
 }
 
-  
-const images = document.querySelectorAll("img[data-src]");
 
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll(".discover-imgs");
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 50px 0px"
-};
+    rootMargin: "0px 0px 200px 0px" // Adjust this value as per your requirements
+  };
 
+const imgObserver = new IntersectionObserver((entries, imgObserver)=>{
+    entries.forEach(entry =>{
+        if (!entry.isIntersecting){
+            preloadImage(entry.target);
+            
+            imgObserver.unobserve(entry.target);
+        }
+    })
+    
+}, imgOptions);
 
-const loadImages = (image) => {
-    if (image.getAttribute("src")){
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {image.removeAttribute("data-src");};
+function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if (!src) {
+      return;
     }
-    else
-    {
-        image.setAttribute("srcset", image.getAttribute("data-src"));
-    }
-};
+    img.src = src;
+    img.removeAttribute("data-src");
+  }
 
-if("IntersectionObserver" in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-            if (!item.isIntersecting) {
-                return;
-            } else {
-                loadImages(item.target);
-                imgObserver.unobserve(item.target);
-            }
-        });
-    }, imgOptions);
+images.forEach(image => {
+    imgObserver.observe(image);
+});
+});
 
-    images.forEach((img) => {
-        imgObserver.observe(img);
-    });
-}
-else {
-}
+
+  // Calculate and display the time between user visits
+  const daysBetweenVisits = document.getElementById('daysBetweenVisits');
+  const lastVisit = localStorage.getItem('lastVisit');
+  const currentDate = new Date();
+  const currentTimestamp = currentDate.getTime();
+  const oneDayMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+  if (lastVisit) {
+    const lastVisitTimestamp = parseInt(lastVisit);
+    const days = Math.round((currentTimestamp - lastVisitTimestamp) / oneDayMilliseconds);
+    daysBetweenVisits.textContent = `Days since last visit: ${days}`;
+  } else {
+    daysBetweenVisits.textContent = "Welcome! It's your first visit.";
+  }
+
+  // Store the current visit timestamp in local storage
+  localStorage.setItem('lastVisit', currentTimestamp.toString());
 

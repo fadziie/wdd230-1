@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Discover Page Knox Tafadzwa Mangwiro WDD 230: Web Frontend Development at BYU Idaho">
+    <title>Durban Chamber of Commerce Discover Page</title>
+</head>
+<body onload="updateBanner()">
+    <div  class="noDisplay activeBanner" id="meetAndGreet" >    
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header class="bannerRoom">
+        <div class="brand">
+            <a class="logo-link" href="chamber.html">
+                <img class="logo" src="images/durban_chamber_logo.png" alt="Durban Chamber of Commerce" />
+            </a>
+            <section class="company">
+                <h1>Durban Chamber of Commerce</h1>
+            </section>
+        </div>
+        <div class="navigation">
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook" />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin" />
+                </a>
+            </div>
+            <button id="hamburgerBtn">&#9776;</button>
+        </div>
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a class="active" href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <span id="currentTime"></span>
+    </header>
+    <main class="discover-grid">
+        <section>
+          <h2>Durban City Hall</h2>
+          <picture>
+            
+            <img
+              class="discover-imgs"
+              
+              src="images/placeholder.png"
+              data-src="images/DurbanCityHall.jpg"
+              alt="Durban City Hall"
+              loading="lazy" 
+            />
+          </picture>
+          <p>
+            The Durban City Hall, also known as the eThekwini City Hall, was built in the early 1900s in classic neo-Baroque-style. The design of the building is based on Belfast's City Hall in Northern Ireland. An impressive central dome rises to 48m, and is surrounded by 4 smaller domes. Each of the smaller domes has a statue which represents art, literature, music and commerce. This impressive building also houses Durban's Natural Science Museum, a public library, auditorium, and the Durban Art Gallery. Items to see include a dodo skeleton, Egyptian mummy, and plenty of other fossils.
+          </p>
+        </section>
+        <section>
+          <h2>Durban Beach Front</h2>
+          <picture>
+            <img
+              class="discover-imgs"
+              src="images/placeholder.png"
+              data-src="images/Durbanbeach.jpg"
+              alt="Durban Beach Front"
+              loading="lazy"
+            />
+          </picture>
+          <p>
+            The most well-known of metropolitan Durban's beaches are North Beach, South Beach and Addington Beach. Set to the north of South Africa's busiest harbour is the North Beach which runs from the Bay of Plenty and Dairy Beach. It is in the heart of the Durban beach-front, now known as the "Golden Mile".
+          </p>
+        </section>
+        <section>
+          <h2>Moses Mabhida</h2>
+          <picture>
+            <img
+              class="discover-imgs"
+              src="images/placeholder.png"
+              data-src="images/moses-mabhida-with-top.jpg"
+              alt="Moses Mabhida Stadium"
+              loading="lazy"
+            />
+          </picture>
+          <p>
+            The Moses Mabhida Stadium is a soccer stadium in Durban in the KwaZulu-Natal province of South Africa, named after Moses Mabhida, a former General Secretary of the South African Communist Party. It is a multi-use stadium. The stadium became a venue for several events, like bungee jumping, concerts, cricket, soccer, golf practice, motorsports and rugby union.[1]
+
+It was one of the host stadiums for the 2010 FIFA World Cup. The stadium has a capacity of 55,500 (expandable up to 75,000).
+          </p>
+        </section>
+        <section>
+          <h2>Ushaka Marine</h2>
+          <picture>
+            <img
+              class="discover-imgs"
+              src="images/placeholder.png"
+              data-src="images/ushaka_marine_world.jpg"
+              alt="Dolphin Ushaka Marine"
+              loading="lazy"
+            />
+          </picture>
+          <p>
+            A world class entertainment theme park and tourism destination located on Durban’s Golden Mile. Looking for things to do in Durban, South Africa? 
+          </p>
+        </section>
+        <section>
+          <h2>Durban Harbour</h2>
+          <picture>
+            <img
+              class="discover-imgs"
+              src="images/placeholder.png"
+              data-src="images/Durban_Harbour.jpg"
+              alt="Durban harbour"
+              loading="lazy"
+            />
+          </picture>
+          <p>
+            Durban Harbour is a natural harbour that still resembles the original bay’s shape. It is said that Portuguese explorer, Vasco da Gama, discovered the bay in 1497. 
+          </p>
+        </section>
+  
+        <div class="demographic-data">
+          <picture>
+            <img
+              class="market-highlight" src="images/ethekwini-pop.png"
+              alt="Durban Population"
+              loading="lazy"
+            />
+          </picture>
+          <p>
+            The current metro area population of Ethekwini in 2023 is 3,228,000, a 0.91% increase from 2022.
+The metro area population of Ethekwini in 2022 was 3,199,000, a 0.72% increase from 2021.
+The metro area population of Ethekwini in 2021 was 3,176,000, a 0.57% increase from 2020.
+          </p>
+        </div>
+  
+        <span id="daysBetweenVisits"></span>
+    </main>
+    <footer class="footer">
+        <div class="section1">
+            <a class="logo-link" href="chamber.html">
+                <img src="images/durban_chamber_logo.png" alt="Durban Chamber Of Commerce logo" />
+            </a>
+            <section class="company">
+                <h2 class="heading">Durban Chamber of Commerce</h2>
+                <h3 class="heading">16 Dr Langalibalele Dube Street,Durban,4001</h3>
+            </section>
+        </div>
+        <div>
+            <p class="heading">man22001@byui.edu</p>
+            <p class="heading">+(27) 67 095 8816</p>
+            <p></p>
+            <a class="heading"
+                href="https://www.google.com/maps/place/16+Dr+Langalibalele+Dube+St,+Durban+Central,+Durban,+4001/@-29.85981,31.0339547,17z/data=!3m1!4b1!4m6!3m5!1s0x1ef7a84ba0d6a191:0x33021cc1aef3094d!8m2!3d-29.8598147!4d31.0365296!16s%2Fg%2F11cs7zmsyp">
+                Location</a>
+        </div>
+        <hr>
+        <div class="section2">
+            <section>
+                <p class="heading">&copy;<span id="currentYear"></span> Durban Chamber</p>
+                <h3 class="heading">Knox Mangwiro</h3>
+                <p>WDD 230 Chamber Project:</p>
+            </section>
+            <p class="last-update" id="lastModified">: </p>
+        </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>

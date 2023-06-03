@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 img {
-    width: 100%;
+    max-width: 100%;
     /* color: white; */
     object-fit: cover;
 }
@@ -315,12 +315,22 @@ main section h2 {
 #daysBetweenVisits {
     display: block;
     box-sizing: border-box;
-    background-color: cyan;
+    background-color: #497a10;
     color: white;
     padding: 2% 1% 2% 1%;
     font-size: 150%;
     border-radius: 10px;
 }
+
+
+.discover-imgs {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .discover-imgs.is-loaded {
+    opacity: 1;
+  }
 
 .discover-imgs {
     box-sizing: border-box;
@@ -328,6 +338,7 @@ main section h2 {
     box-shadow: 10px 10px 15px #7BC950;
     width: 80%;
     border-radius: 10px;
+    
 }
 
 /*Join Styles*/

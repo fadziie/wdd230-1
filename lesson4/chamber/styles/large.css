@@ -57,7 +57,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: center;
+        
         
     }
     
@@ -124,8 +124,8 @@
     .market-highlight {
         margin-top: 15px;
         box-sizing: border-box;
-        border: 10px solid #603613;
-        box-shadow: 10px 10px 15px #603613;
+        border: 10px solid #7bc950;
+        box-shadow: 10px 10px 15px #7bc950;
         width: 80%;
     }
     
