@@ -1,0 +1,98 @@
+{
+    "businesses": [
+      {
+        "companyName":"Accounting Direct",
+        "siteLogo":"images/adhor.png",
+        "address":"59 Diakonia Avenue,Building Industry House",
+        "number":"+27 (31) 301 0845",
+        "membershipLevel" : "Gold Membership",
+        "siteURL":"http://www.accountingdirect.co.za/"
+        
+         
+      },
+      {
+        "companyName":"PumpnMech Engineering & Projects",
+        "siteLogo":"images/pumpnmech-logo.jpg",
+        "address":"21 Joe Slovo, Zumaysha, Durban, 4001",
+        "number":"+27 (31) 100 3125",
+        "membershipLevel" : "Silver Membership",
+        "siteURL":"http://www.pumpnmech.com/"
+        
+        
+      },
+      {
+        "companyName":"Diverse Digital Solutions",
+        "siteLogo":"images/diverse_logo.png",
+        "address":"18th Floor, Redifined Towers, Durban, 4000",
+        "number":"+27 (65) 869 7765",
+        "membershipLevel" : "Silver Membership",
+        "siteURL":"http://www.diverseinc.co.za/"
+        
+         
+        
+      },
+      {
+        "companyName":"AutoZone Durban",
+        "siteLogo":"images/autozone-logo.png",
+        "address":"30 Morrison St, North Beach, Durban, 4063",
+        "number":"+27 (31) 337 1165",
+        "membershipLevel" : "Silver Membership",
+        "siteURL":"https://autozone.co.za/"
+        
+        
+  
+      },
+      {
+        "companyName":"Capricorn Parts",
+        "siteLogo":"images/capricornparts-logo.webp",
+        "address":"40 Milne St, South Beach, Durban, 4001",
+        "number":"+27 (31) 332 3324",
+        "membershipLevel" : "Bronze Membership",
+        "siteURL":"https://www.capricornparts.co.za/"
+        
+         
+      },
+      {        
+        "companyName":"Tega Scents",
+        "siteLogo":"images/Tega-Scents_logo.webp",
+        "address":"151/155 Victoria St, Durban Central, Durban, 4001",
+        "number":"+27 (78) 775 7037",
+        "membershipLevel" : "Bronze Membership",
+        "siteURL":"https://www.tegascents.co.za/"
+        
+         
+      },
+      {
+        "companyName":"Maritime Business Institute",
+        "siteLogo":"images/maritime_logo.png",
+        "address":"62 Bay Terrace , South Beach, Durban, 4001",
+        "number":"+27 (31) 301 0649",
+        "membershipLevel" : "NP Membership",
+        "siteURL":"https://www.maritimebusinessinstitute.co.za/"
+  
+       
+        
+      
+      },
+      {
+        "companyName":"Suncoast Casino",
+        "siteLogo":"images/suncoastcasino-logo.png",
+        "address":"Suncoast Boulevard, O R Tambo Parade, Durban, 4056",
+        "number":"+27 (31) 328 3000",
+        "membershipLevel":"Gold Membership",
+        "siteURL":"https://www.suncoastcasino.co.za/"
+        
+        
+      },
+      {
+        "companyName":"Chateau Gateaux Morningside",
+        "siteLogo":"images/chateaugateaux-logo",
+        "address":"136 Problem Mkhize Rd, Morningside, Durban, 4000",
+        "number":"+27 (31) 309 1661",
+        "membershipLevel" : "Gold Membership",
+        "siteURL":"https://chateaugateaux.co.za/"
+       
+        
+      }
+    ]
+  }

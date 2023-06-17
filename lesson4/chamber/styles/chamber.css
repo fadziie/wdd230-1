@@ -421,11 +421,41 @@ form label.top input:required:valid{
 }
 
 /*Directory Styles*/
+.businessDirectory {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .businessCards {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    box-shadow: 8px 8px 10px #497a10;
+  }
+
 .businessCards img {
     width: 100%;
     height: auto;
 }
 
+.businessCards h2 {
+    margin-top: 10px;
+  }
+
+  .businessCards a {
+    text-decoration: none;
+    color: #000080;
+  }
+  
+  .businessCards a:hover {
+    color: #294007;
+  }
+  
+  .businessCard .businessName {
+    display: none;
+  }
+  
 #directory-main div {
     border: none;
     background-color: white;
@@ -445,6 +475,9 @@ form label.top input:required:valid{
 
 /*Directory Grid*/
 .directory-grid .businessCards section {
+    background-color: white;
+    padding: 5%;
+    border: none;
     padding: 5%;
     box-shadow: 8px 8px 10px #497a10;
 }
@@ -452,13 +485,29 @@ form label.top input:required:valid{
     display: none;
 }
 
+.directory-grid .businessCards img {
+    display: block;
+  }
+  
+  .directory-grid .businessCards section {
+    padding: 0;
+    margin: 0;
+  }
+  
+
 /*Directory List*/
+.directory-list .businessCards {
+    background-color: white;
+    padding: 5%;
+    border: none;
+    box-shadow: 8px 8px 10px #497a10;
+  }
 .directory-list .businessCards img {
     display: none;
 }
 
 .directory-list .businessCards section {
-    padding: 5%;
+    padding: 0;
     margin: 0;
     text-align: start;
 }
@@ -569,5 +618,4 @@ hr {
     margin-right: 10px; /* Adjust the margin as needed */
   }
 
-  
   
