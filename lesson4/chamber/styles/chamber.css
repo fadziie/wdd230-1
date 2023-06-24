@@ -665,4 +665,57 @@ hr {
     margin-right: 10px; /* Adjust the margin as needed */
   }
 
+  /* Weather section styles */
+.weather {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .weather h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .weather p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .weather figure {
+    margin-top: 20px;
+  }
+  
+  .weather img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .weather figcaption {
+    font-size: 14px;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .weather {
+      padding: 10px;
+    }
+  
+    .weather h2 {
+      font-size: 20px;
+    }
+  
+    .weather p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Animations */
+  .weather img {
+    transition: transform 0.3s ease;
+  }
+  
+  .weather img:hover {
+    transform: scale(1.1);
+  }
   
