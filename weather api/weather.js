@@ -57,3 +57,9 @@ function displayResults(weatherData) {
 }
 
 apiFetch();
+
+// Get current year
+var currentYear = new Date().getFullYear();
+  
+// Set current year in HTML
+document.getElementById("currentYear").textContent = currentYear;
