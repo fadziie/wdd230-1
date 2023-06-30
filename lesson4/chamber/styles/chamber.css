@@ -718,4 +718,28 @@ hr {
   .weather img:hover {
     transform: scale(1.1);
   }
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+  }
+  
+  .neutral {
+    background-color: #f2f2f2;
+  }
+  
+  .bronze {
+    background-color: #cd7f32;
+    color: white;
+  }
+  
+  .silver {
+    background-color: #c0c0c0;
+    color: black;
+  }
+  
+  .gold {
+    background-color: #ffd700;
+    color: black;
+  }
   

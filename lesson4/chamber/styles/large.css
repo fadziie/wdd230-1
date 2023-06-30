@@ -149,27 +149,36 @@
     /*Join styles*/
     .join-grid {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 15px;
-        align-items: center;
+        align-items: start;
     }
     
     #benefits {
         grid-column: 2/3;
         height: 90%;
         border-radius: 10px;
+        display: flex; /* Add flex display to align cards horizontally */
+        flex-direction: column; /* Align card content in a column */
+        justify-content: space-between; /* Distribute space between card elements */
+        padding: 10px;
+        overflow: hidden; /* Add overflow property to hide overflowing content */
     }
     
     .membership-benefit {
         border: none;
-        width: auto;
+        width: 100%;
         height: auto;
+        padding: 10px;
+        box-sizing: border-box; /* Include padding in width and height calculations */
+        display: flex;
+  justify-content: center; /* Center the membership card horizontally */
     }
     
     .membership-benefit li {
         text-align: start;
-        width: 50%;
-        margin-left: 25%;
+        width: 100%;
+        margin-left: 0%;
     }
     
     /*ContactUs styles*/
