@@ -11,7 +11,7 @@ async function getBusinessesData() {
 
 
 function displayBusinesses(businesses) {
-    const spotlightSections = document.querySelectorAll(".spotlight section");
+    const spotlightSections = document.querySelectorAll(".spotlight");
   
     // Filter businesses with silver or gold membership level
     const filteredBusinesses = businesses.filter(
@@ -30,9 +30,15 @@ function displayBusinesses(businesses) {
   
       heading.textContent = business.companyName;
       description.textContent = business.description;
+
+      // Optional: Create a link for each business
+  const link = document.createElement("a");
+  link.href = business.siteURL;
+  link.textContent = "Visit Website";
+  spotlightSection.appendChild(link);
     });
   }
-  
+  getBusinessesData();
   function getRandomBusinesses(businesses, minCount, maxCount) {
     const selectedBusinesses = [];
     const count = Math.floor(Math.random() * (maxCount - minCount + 1)) + minCount;
@@ -48,3 +54,11 @@ function displayBusinesses(businesses) {
     return selectedBusinesses;
   }
   
+
+
+
+
+
+
+
+
