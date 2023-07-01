@@ -563,29 +563,73 @@ form input.submitBtn:hover {
     padding: 4px;
 }
 
-/*ContactUs styles*/
+/* Existing CSS code */
+/* ... */
+
 .contact-info {
     box-shadow: 8px 8px 8px #497a10;
-}
-
-.contact-info h3, .contact-info p {
+  }
+  
+  .contact-info h2,
+  .contact-info h3,
+  .contact-info p {
     text-align: start;
     padding-left: 10%;
-}
-
-.contact-info a {
+  }
+  
+  .contact-info a {
     display: block;
     margin: 0 70% 0 10%;
-}
-
-.contact-info section {
+  }
+  
+  .contact-info section {
     border: none;
     margin-top: 0;
     margin-bottom: 0;
-}
+  }
+  
+  
+  
+  .contact-item {
+    box-shadow: 8px 8px 8px #497a10;
+    padding: 20px;
+  }
+  
+  /* Additional CSS for the desired layout */
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border:none;
+    background-color: #000080;
+  }
+  
+  .contact-item {
+    flex-basis: calc(50%-20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  #map {
+    flex: 0 0 calc(50% - 20px);
+  }
+  .general-enquiries {
+    margin-top: 20px;
+  }
+  
 
-
-
+  .contact-item.location {
+    flex-basis: 100%;
+    
+    }
+  
+  
+  @media screen and (max-width: 768px) {
+    .contact-item {
+      flex-basis: 100%;
+    }
+  }
 
 /*Footer styles*/
 footer {

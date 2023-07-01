@@ -6,7 +6,8 @@
         "address":"59 Diakonia Avenue,Building Industry House",
         "number":"+27 (31) 301 0845",
         "membershipLevel" : "Gold Membership",
-        "siteURL":"http://www.accountingdirect.co.za/"
+        "siteURL":"http://www.accountingdirect.co.za/",
+        "description": "Durban Accounting Firm"
         
          
       },
@@ -16,8 +17,8 @@
         "address":"21 Joe Slovo, Zumaysha, Durban, 4001",
         "number":"+27 (31) 100 3125",
         "membershipLevel" : "Silver Membership",
-        "siteURL":"http://www.pumpnmech.com/"
-        
+        "siteURL":"http://www.pumpnmech.com/",
+        "description": "Durban Engineering Firm"
         
       },
       {
@@ -26,7 +27,8 @@
         "address":"18th Floor, Redifined Towers, Durban, 4000",
         "number":"+27 (65) 869 7765",
         "membershipLevel" : "Silver Membership",
-        "siteURL":"http://www.diverseinc.co.za/"
+        "siteURL":"http://www.diverseinc.co.za/",
+        "description": "Durban Start Up IT Firm"
         
          
         
@@ -37,7 +39,8 @@
         "address":"30 Morrison St, North Beach, Durban, 4063",
         "number":"+27 (31) 337 1165",
         "membershipLevel" : "Silver Membership",
-        "siteURL":"https://autozone.co.za/"
+        "siteURL":"https://autozone.co.za/",
+        "description": "Durban Auto Firm"
         
         
   
@@ -48,7 +51,8 @@
         "address":"40 Milne St, South Beach, Durban, 4001",
         "number":"+27 (31) 332 3324",
         "membershipLevel" : "Bronze Membership",
-        "siteURL":"https://www.capricornparts.co.za/"
+        "siteURL":"https://www.capricornparts.co.za/",
+        "description": "Durban Auto Parts Firm"
         
          
       },
@@ -58,7 +62,9 @@
         "address":"151/155 Victoria St, Durban Central, Durban, 4001",
         "number":"+27 (78) 775 7037",
         "membershipLevel" : "Bronze Membership",
-        "siteURL":"https://www.tegascents.co.za/"
+        "siteURL":"https://www.tegascents.co.za/",
+        "description": "Durban Start Up Perfume Business"
+
         
          
       },
@@ -68,7 +74,8 @@
         "address":"62 Bay Terrace , South Beach, Durban, 4001",
         "number":"+27 (31) 301 0649",
         "membershipLevel" : "NP Membership",
-        "siteURL":"https://www.maritimebusinessinstitute.co.za/"
+        "siteURL":"https://www.maritimebusinessinstitute.co.za/",
+        "description": "Durban Harbour Maritime College"
   
        
         
@@ -80,7 +87,8 @@
         "address":"365 Dr Pixley Kaseme and Joe Slovo Street, Durban CBD, Durban, 4001",
         "number":"+27 (31) 301 2791",
         "membershipLevel":"Gold Membership",
-        "siteURL":"http://www.glenaire.co.za/"
+        "siteURL":"http://www.glenaire.co.za/",
+        "description": "Durban Butchery and Grill"
         
         
       },
@@ -90,7 +98,8 @@
         "address":"136 Problem Mkhize Rd, Morningside, Durban, 4000",
         "number":"+27 (31) 309 1661",
         "membershipLevel" : "Gold Membership",
-        "siteURL":"https://chateaugateaux.co.za/"
+        "siteURL":"https://chateaugateaux.co.za/",
+        "description": "Durban Confectionary Brand"
        
         
       }
