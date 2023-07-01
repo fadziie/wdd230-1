@@ -1,13 +1,10 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
-.noDisplay {
-    display: none;
-}
+
 h1, h2, h3, h4 {
-    font-family: 'Roboto', 'san serif';
+    font-family: 'Roboto', sans-serif;
     /* color: white; */
 }
 p, a {
-    font-family: 'Roboto', 'san serif';
+    font-family: 'Roboto', sans-serif;
 }
 body {
     max-width: 1200px;
