@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="shortcut icon" href="images/favicon.ico" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,47 +51,35 @@
         <span id="currentTime"></span>
     </header>
     <main>
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-              <h3>Chamber Information</h3>
-              <p>Phone: 123-456-7890</p>
-              <p>Email: info@example.com</p>
-              <p>Address: 123 Main Street, City, Country</p>
-              <a href="#">Visit our website</a>
-            </div>
-            <div class="contact-item">
-              <h3>Office Hours</h3>
-              <p>Monday-Friday: 9am-5pm</p>
-              <p>Saturday: 10am-2pm</p>
-              <p>Sunday: Closed</p>
-            </div>
-            <div class="contact-item">
-              <h3>Points of Contact</h3>
-              <p>General Inquiries: info@example.com</p>
-              <p>Membership: membership@example.com</p>
-              <p>Events: events@example.com</p>
-            </div>
-            <div class="contact-item">
-              <h3>General Inquiries</h3>
-              <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <input type="submit" value="Submit">
-              </form>
-            </div>
-            <div class="contact-item location">
-                <h3>Location</h3>
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=-29.859795655802593, 31.0364588951648&zoom=12&size=600x400&key=AIzaSyBF6EoUH2SFDYYMEsSgl28VabC5mWATfSY" alt="Map">
-              </div>
-            </div>
+        <div class="contact-wrap">
+			<div class="contact-in">
+				<h1>Contact Info</h1>
+				<h2> Phone Number</h2>
+				<p>+27 67 095 8816</p>
+				<h2>Email</h2>
+				<p>man22001@byui.edu</p>
+				<h2>Address</h2>
+				<p>South Beach,Durban, South Africa</p>
+				<ul>
+                <li><a href="#"><i class="material-icons">twitter</i></a></li>
+                <li><a href="#"><i class="material-icons">google</i></a></li>
+                <li><a href="#"><i class="material-icons">instagram</i></a></li>
+                </ul>
+			</div>
+			<div class="contact-in">
+				<h1>Send a Message</h1>
+				<form>
+					<input type="text" placeholder="Full Name" class="contact-in-input">
+					<input type="text" placeholder="Email" class="contact-in-input">
+					<input type="text" placeholder="Subject" class="contact-in-input">
+					<textarea placeholder="Message" class="contact-in-textarea"></textarea>
+					<input type="submit" value="SUBMIT" class="contact-in-btn">
+				</form>
+			</div>
+			<div class="contact-in">
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=-29.859795655802593, 31.0364588951648&zoom=12&size=600x400&key=AIzaSyBF6EoUH2SFDYYMEsSgl28VabC5mWATfSY" alt="Map">
+			</div>
+		</div>
            
     </main>
     
