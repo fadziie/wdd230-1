@@ -27,9 +27,13 @@ function displayBusinesses(businesses) {
       const spotlightSection = spotlightSections[index];
       const heading = spotlightSection.querySelector("h3");
       const description = spotlightSection.querySelector("p");
+      const logo = spotlightSection.querySelector(".logo");
+      const phoneNumber = spotlightSection.querySelector(".phone");
   
       heading.textContent = business.companyName;
       description.textContent = business.description;
+      logo.style.backgroundImage = `url(${business.siteLogo})`;
+      phoneNumber.textContent = "Phone: " + business.number;
 
       // Optional: Create a link for each business
   const link = document.createElement("a");
