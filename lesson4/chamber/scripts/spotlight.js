@@ -11,7 +11,7 @@ async function getBusinessesData() {
 
 
 function displayBusinesses(businesses) {
-    const spotlightSections = document.querySelectorAll(".spotlight");
+    const spotlightSections = document.querySelectorAll(".spotlight section");
   
     // Filter businesses with silver or gold membership level
     const filteredBusinesses = businesses.filter(
