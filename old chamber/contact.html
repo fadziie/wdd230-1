@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Home Page Knox Tafadzwa Mangwiro WDD 230: Web Frontend Development at BYU Idaho">
+    <title>Durban Chamber of Commerce Contact page</title>
+</head>
+<body onload="updateBanner()">
+    <div  class="noDisplay activeBanner" id="meetAndGreet" >    
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header class="bannerRoom">
+        <div class="brand">
+            <a class="logo-link" href="chamber.html">
+                <img class="logo" src="images/durban_chamber_logo.webp" alt="Durban Chamber of Commerce" >
+            </a>
+            <section class="company">
+                <h1>Durban Chamber of Commerce</h1>
+            </section>
+        </div>
+        <div class="navigation">
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook" >
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin" >
+                </a>
+            </div>
+            <button id="hamburgerBtn"> &#9776;</button>
+        </div>
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <span id="currentTime"></span>
+    </header>
+    <main>
+        <div class="contact-wrap">
+			<div class="contact-in">
+				<h1>Contact Info</h1>
+				<h2> Phone Number</h2>
+				<p>+27 67 095 8816</p>
+				<h2>Email</h2>
+				<p>man22001@byui.edu</p>
+				<h2>Address</h2>
+				<p>South Beach,Durban, South Africa</p>
+				<ul>
+                <li><a href="#"><i class="material-icons">twitter</i></a></li>
+                <li><a href="#"><i class="material-icons">google</i></a></li>
+                <li><a href="#"><i class="material-icons">instagram</i></a></li>
+                </ul>
+			</div>
+			<div class="contact-in">
+				<h1>Send a Message</h1>
+				<form>
+					<input type="text" placeholder="Full Name" class="contact-in-input">
+					<input type="text" placeholder="Email" class="contact-in-input">
+					<input type="text" placeholder="Subject" class="contact-in-input">
+					<textarea placeholder="Message" class="contact-in-textarea"></textarea>
+					<input type="submit" value="SUBMIT" class="contact-in-btn">
+				</form>
+			</div>
+			<div class="contact-in">
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=-29.859795655802593, 31.0364588951648&zoom=12&size=600x400&key=AIzaSyBF6EoUH2SFDYYMEsSgl28VabC5mWATfSY" alt="Map">
+			</div>
+		</div>
+           
+    </main>
+    
+    <footer class="footer">
+        <div class="section1">
+            <a class="logo-link" href="chamber.html">
+                <img src="images/durban_chamber_logo.webp" alt="Durban Chamber Of Commerce logo" >
+            </a>
+            <section class="company">
+                <h2 class="heading">Durban Chamber of Commerce</h2>
+                <h3 class="heading">16 Dr Langalibalele Dube Street,Durban,4001</h3>
+            </section>
+        </div>
+        <div>
+            <p class="heading">man22001@byui.edu</p>
+            <p class="heading">+(27) 67 095 8816</p>
+            <p></p>
+            <a class="heading"
+                href="https://www.google.com/maps/place/16+Dr+Langalibalele+Dube+St,+Durban+Central,+Durban,+4001/@-29.85981,31.0339547,17z/data=!3m1!4b1!4m6!3m5!1s0x1ef7a84ba0d6a191:0x33021cc1aef3094d!8m2!3d-29.8598147!4d31.0365296!16s%2Fg%2F11cs7zmsyp">
+                Location</a>
+        </div>
+        <hr>
+        <div class="section2">
+            <section>
+                <p class="heading">&copy;<span id="currentYear"></span> Durban Chamber</p>
+                <h3 class="heading">Knox Mangwiro</h3>
+                <p>WDD 230 Chamber Project:</p>
+            </section>
+            <p class="last-update" id="lastModified">: </p>
+        </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</body>
+</html>

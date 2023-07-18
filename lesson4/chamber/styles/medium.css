@@ -1,146 +1,93 @@
-@media only screen and (min-width: 40em){
+/* Styles for medium viewport */
+/* Add your own custom styles based on your site plan */
 
-  /*main*/
-  .home-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto auto auto auto auto;
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
   }
   
+  nav ul.menu {
+    display: inline-block;
+  }
+  
+  .social-media {
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 767px) {
+    nav ul.menu {
+      display: none;
+    }
+  
+    .social-media {
+      display: inline-block;
+    }
+  }
+  /* Header */
+  header {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #hamburgerButttn {
+    display: block;
+  }
+
+  #primaryNav {
+    display: none;
+  }
+
+  .navigation {
+    grid-column: 2/3;
+  }
+
+  /* Main */
   main section, main div {
-      grid-column: 1/3;
-      margin: 0.3rem;
-  }
-  
-  .event {
-      grid-row: 6/7;
-      grid-column: 1/2;
-  }
-  
-  .weather {
-      grid-row: 6/7;
-      grid-column: 2/3;
-  }
-  
-  .spotlight {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.5%;
-  }
-  
-  .spotlight section {
-      height: 100%;
-      width: 100%;
-  }
-  
-  .spotlight1 {
-      grid-column: 1/2;
-  }
-  
-  .spotlight2 {
-      grid-column: 2/3;
-  }
-  
-  .medium-display {
-      display: block;
-  }
-  
-  #join {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  #join a {
-      text-decoration: none;
-      background-color: #7bc950;
-      border-radius: 10px;
-      color: black;
-      display: block;
-      width: 90%;
-      margin-top: 3%;
-      padding: 5% 0 5% 0;
-      box-shadow: 5px 5px 5px #000080;
-  }
-  
-  #join a:hover {
-      background-color: #ececec;
-      color: #497a10;
-  }
-  
-  /*Discover Styles*/
-  
-  .demographic-data p {
-      margin-left: 2%;
-      margin-right: 2%;
-      background-color: #000080;
-      color: white;
-  }
-  
-  .market-highlight {
-      width: 100%;
-  }
-  
-  /*Directory Styles*/
-  .businessCards section {
-      box-sizing: border-box;
-      grid-column: auto;
-  }
-  
-  .businessCards a {
-      overflow-wrap: break-word;
-  }
-  
-  /*Directory Grid*/
-  .directory-grid .businessCards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 15px;
-  }
-  
-  /*Directory List*/
-  
-  /*footer*/
-  footer {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      align-items: center;
-  }
-  
-  /*section 1*/
-  .section1 .logo-link {
-      width: 150px;
-  }
-  
-  .section1 .company {
-      text-align: left;
-      padding: 5%;
-  }
-  
-  .section1 {
-      display: flex;
-      max-width: 100%;
-      margin: 0;
-      align-items: center;
-  }
-  
-  /*section 2*/
-  .section2 {
-      grid-column: 1/3;
-  }
-  
-  .section2 section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-  }
-  
-  hr {
-      grid-column: 1/3;
-      width: 100%;
-  }
-  
+    height: auto;
+    width: auto;
   }
 
+  #hero-banner {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .event {
+    grid-row: 1/2;
+  }
+
+  .weather {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #join {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .news {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2/4;
+  }
+
+  .spotlight section {
+    margin: 15px 0;
+  }
+
+  /* Media Queries */
+@media only screen and (min-width: 768px) {
+  /* Medium View */
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 300px;
+  }
+}

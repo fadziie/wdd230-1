@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Accounting Direct",
+      "address": "59 Diakonia Avenue,Building Industry House",
+      "phone": "031 301 0845",
+      "website": "http://www.accountingdirect.co.za/",
+      "logo": "images/logos/adhor.webp"
+    },
+    {
+      "name": "PumpnMech Engineering & Projects",
+      "address": "21 Joe Slovo, Zumaysha, Durban, 4001",
+      "phone": "031 100 3125",
+      "website": "http://www.pumpnmech.com/",
+      "logo": "images/logos/pumpnmech-logo.webp"
+    },
+
+    {
+        "name": "Diverse Digital Solutions",
+        "address": "18th Floor, Redifined Towers, Durban, 4000",
+        "phone": "+27 (65) 869 7765",
+        "website": "http://www.diverseinc.co.za/",
+        "logo": "images/logos/diverse_logo.webp"
+      },
+
+      {
+        "name": "AutoZone Durban",
+        "address": "30 Morrison St, North Beach, Durban, 4063",
+        "phone": "031 337 1165",
+        "website": "https://autozone.co.za",
+        "logo": "images/logos/autozone-logo.png"
+      },
+    
+      {
+        "name": "Capricorn Parts",
+        "address": "40 Milne St, South Beach, Durban, 4001",
+        "phone": "031 332 3324",
+        "website": "https://www.capricornparts.co.za/",
+        "logo": "images/logos/capricornparts-logo.webp"
+      },
+      {
+        "name": "Tega Scents",
+        "address": "151/155 Victoria St, Durban Central, Durban, 4001",
+        "phone": "078 775 7037",
+        "website": "https://www.tegascents.co.za/",
+        "logo": "images/logos/Tega-Scents_logo.webp"
+      },
+      {
+        "name": "Maritime Business Institute",
+        "address": "62 Bay Terrace , South Beach, Durban, 4001",
+        "phone": "031 301 0649",
+        "website": "https://www.maritimebusinessinstitute.co.za/",
+        "logo": "images/logos/maritime_logo.webp"
+      },
+
+      {
+        "name": "Glenaire",
+        "address": "365 Dr Pixley Kaseme and Joe Slovo Street, Durban CBD, Durban, 4001",
+        "phone": "031 301 2791",
+        "website": "http://www.glenaire.co.za/",
+        "logo": "images/logos/glenaire_logo.webp"
+      },
+      {
+        "name": "Chateau Gateaux Morningside",
+        "address": "136 Problem Mkhize Rd, Morningside, Durban, 4000",
+        "phone": "031 309 1661",
+        "website": "https://chateaugateaux.co.za/",
+        "logo": "images/logos/chateaugateaux-logo.webp"
+      }
+
+    
+  ]
+  

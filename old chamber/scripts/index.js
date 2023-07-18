@@ -10,12 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const primaryNav = document.getElementById('primaryNav');
-  
-    
-      
-    
-  
-    hamburgerBtn.addEventListener('click',function () {
+      hamburgerBtn.addEventListener('click',function () {
       primaryNav.classList.toggle('open');
     });
     });

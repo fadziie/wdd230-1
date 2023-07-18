@@ -1,66 +1,49 @@
-async function getBusinessesData() {
-    try {
-      const response = await fetch("data/data.json");
-      const data = await response.json();
-      displayBusinesses(data.businesses);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+// Function to fetch data from the JSON file
+function fetchData() {
+  fetch('businesses.json')
+    .then(response => response.json())
+    .then(data => displaySpotlight(data));
+}
+
+// Function to display spotlight information
+function displaySpotlight(data) {
+  const silverGoldMembers = data.filter(business => business.membershipLevel === "Silver Membership" || business.membershipLevel === "Gold Membership");
+  
+  // Randomly select two to three members
+  const selectedMembers = getRandomMembers(silverGoldMembers, 2, 3);
+  
+  // Populate spotlight sections with member data
+  const spotlight1 = document.getElementById('spotlight1');
+  spotlight1.querySelector('h3').innerText = selectedMembers[0].name;
+  spotlight1.querySelector('p').innerText = selectedMembers[0].address;
+  spotlight1.querySelector('.phone').innerText = 'Phone: ' + selectedMembers[0].phone;
+
+  const spotlight2 = document.getElementById('spotlight2');
+  spotlight2.querySelector('h3').innerText = selectedMembers[1].name;
+  spotlight2.querySelector('p').innerText = selectedMembers[1].address;
+  spotlight2.querySelector('.phone').innerText = 'Phone: ' + selectedMembers[1].phone;
+
+  if (selectedMembers.length === 3) {
+    const spotlight3 = document.getElementById('spotlight3');
+    spotlight3.querySelector('h3').innerText = selectedMembers[2].name;
+    spotlight3.querySelector('p').innerText = selectedMembers[2].address;
+    spotlight3.querySelector('.phone').innerText = 'Phone: ' + selectedMembers[2].phone;
+  }
+}
+
+// Function to randomly select members
+function getRandomMembers(members, min, max) {
+  const selectedMembers = [];
+  const numMembers = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  for (let i = 0; i < numMembers; i++) {
+    const randomIndex = Math.floor(Math.random() * members.length);
+    selectedMembers.push(members[randomIndex]);
+    members.splice(randomIndex, 1);
   }
 
+  return selectedMembers;
+}
 
-
-function displayBusinesses(businesses) {
-    const spotlightSections = document.querySelectorAll(".spotlight section");
-  
-    // Filter businesses with silver or gold membership level
-    const filteredBusinesses = businesses.filter(
-      (business) =>
-        business.membershipLevel === "Silver Membership" ||
-        business.membershipLevel === "Gold Membership"
-    );
-  
-    // Randomly select two to three businesses
-    const selectedBusinesses = getRandomBusinesses(filteredBusinesses, 2, 3);
-  
-    selectedBusinesses.forEach((business, index) => {
-      const spotlightSection = spotlightSections[index];
-      const heading = spotlightSection.querySelector("h3");
-      const description = spotlightSection.querySelector("p");
-      const phoneNumber = spotlightSection.querySelector(".phone");
-  
-      heading.textContent = business.companyName;
-      description.textContent = business.description;
-      phoneNumber.textContent = "Phone: " + business.number;
-
-      // Optional: Create a link for each business
-  const link = document.createElement("a");
-  link.href = business.siteURL;
-  link.textContent = "Visit Website";
-  spotlightSection.appendChild(link);
-    });
-  }
-  getBusinessesData();
-  function getRandomBusinesses(businesses, minCount, maxCount) {
-    const selectedBusinesses = [];
-    const count = Math.floor(Math.random() * (maxCount - minCount + 1)) + minCount;
-  
-    while (selectedBusinesses.length < count) {
-      const randomIndex = Math.floor(Math.random() * businesses.length);
-      const randomBusiness = businesses[randomIndex];
-      if (!selectedBusinesses.includes(randomBusiness)) {
-        selectedBusinesses.push(randomBusiness);
-      }
-    }
-  
-    return selectedBusinesses;
-  }
-  
-
-
-
-
-
-
-
-
+// Fetch data and display spotlight
+fetchData();

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh | Bountiful Foods</title>
+  <link rel="stylesheet" href="bountiful.css">
+  </head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Phone: 123-456-7890</p>
+      <p>Email: info@bountifulfoods.com</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="fresh">
+      <h1>Build Your Own Specialty Drink</h1>
+      <form id="drink-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="fruit1">Fruit 1:</label>
+        <select id="fruit1" required></select>
+
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2" required></select>
+
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3" required></select>
+
+        <label for="special-instructions">Special Instructions:</label>
+        <textarea id="special-instructions"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="order-output" style="display: none;">
+        <h2>Your Order:</h2>
+        <p id="order-info"></p>
+        <p id="order-date"></p>
+        <h2>Nutritional Information:</h2>
+        <table id="nutritional-info">
+          <thead>
+            <tr>
+              <th>Carbohydrates</th>
+              <th>Protein</th>
+              <th>Fat</th>
+              <th>Sugar</th>
+              <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="fruit1-info"></tr>
+            <tr id="fruit2-info"></tr>
+            <tr id="fruit3-info"></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+  <script src="bountiful.js" defer></script>
+</body>
+
+</html>

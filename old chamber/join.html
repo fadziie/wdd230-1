@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Join Page Knox Tafadzwa Mangwiro WDD 230: Web Frontend Development at BYU Idaho">
+    <title>Durban Chamber of Commerce Homepage</title>
+</head>
+<body onload="updateBanner()">
+    <div  class="noDisplay activeBanner" id="meetAndGreet" >    
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header class="bannerRoom">
+        <div class="brand">
+            <a class="logo-link" href="chamber.html">
+                <img class="logo" src="images/durban_chamber_logo.webp" alt="Durban Chamber of Commerce" >
+            </a>
+            <section class="company">
+                <h1>Durban Chamber of Commerce</h1>
+            </section>
+        </div>
+        <div class="navigation">
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook" >
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin" >
+                </a>
+            </div>
+            <button id="hamburgerBtn"> &#9776;</button>
+        </div>
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <span id="currentTime"></span>
+    </header>
+    <main class="join-grid">
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Applicant Information</legend>
+            <div class="form-row">
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-row">
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+              <label for="position-title">Business Position Title</label>
+              <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\s-]{7,}">
+            </div>
+            <div class="form-row">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </fieldset>
+      
+          <fieldset>
+            <legend>Organizational Information</legend>
+            <div class="form-row">
+              <label for="membership">Membership Level:</label>
+              <select id="membership" name="membership">
+                <option value="">Membership Type &#9662;</option>
+                <option value="bronze-membership">Bronze Membership</option>
+                <option value="silver-membership">Silver Membership</option>
+                <option value="gold-membership">Gold Membership</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="description">Business Description</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+          </fieldset>
+      
+          <input type="hidden" name="form-loaded-at" value="2023-06-09T12:00:00">
+          <input type="submit" value="Submit" class="submitBtn">
+        </form>
+      
+        <section id="benefits" class="large-only">
+          <h2>Membership Level Benefits:</h2>
+          <section class="membership-benefit">
+            <div class="card neutral">
+            <h3>NP Membership (no fee)</h3>
+            <ul>
+              <li>Access to training resources</li>
+              <li>Listing on the website</li>
+            </ul>
+            </div>
+          </section>
+          <section class="membership-benefit">
+            <div class="card bronze">
+            <h3>Bronze Membership</h3>
+            <p>R100.00</p>
+            <ul>
+              <li>Featured advertising on the home page</li>
+              <li>Discounted event tickets</li>
+            </ul>
+            </div>
+          </section>
+          <section class="membership-benefit">
+            <div class="card silver">
+            <h3>Silver Membership</h3>
+            <p>R200.00</p>
+            <ul>
+              <li>Priority event registration</li>
+              <li>Exclusive industry reports</li>
+            </ul>
+            </div>
+          </section>
+          <section class="membership-benefit">
+            <div class="card gold">
+            <h3>Gold Membership</h3>
+            <p>R300.00</p>
+            <ul>
+              <li>Personalized support</li>
+              <li>Access to VIP events</li>
+            </ul>
+            </div>
+          </section>
+        </section>
+      </main>
+      
+    <footer class="footer">
+        <div class="section1">
+            <a class="logo-link" href="chamber.html">
+                <img src="images/durban_chamber_logo.webp" alt="Durban Chamber Of Commerce logo" >
+            </a>
+            <section class="company">
+                <h2 class="heading">Durban Chamber of Commerce</h2>
+                <h3 class="heading">16 Dr Langalibalele Dube Street,Durban,4001</h3>
+            </section>
+        </div>
+        <div>
+            <p class="heading">man22001@byui.edu</p>
+            <p class="heading">+(27) 67 095 8816</p>
+            <p></p>
+            <a class="heading"
+                href="https://www.google.com/maps/place/16+Dr+Langalibalele+Dube+St,+Durban+Central,+Durban,+4001/@-29.85981,31.0339547,17z/data=!3m1!4b1!4m6!3m5!1s0x1ef7a84ba0d6a191:0x33021cc1aef3094d!8m2!3d-29.8598147!4d31.0365296!16s%2Fg%2F11cs7zmsyp">
+                Location</a>
+        </div>
+        <hr>
+        <div class="section2">
+            <section>
+                <p class="heading">&copy;<span id="currentYear"></span> Durban Chamber</p>
+                <h3 class="heading">Knox Mangwiro</h3>
+                <p>WDD 230 Chamber Project:</p>
+            </section>
+            <p class="last-update" id="lastModified">: </p>
+        </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>

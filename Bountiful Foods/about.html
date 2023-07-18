@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Bountiful Foods</title>
+  <link rel="stylesheet" href="bountiful.css">
+  </head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Phone: 123-456-7890</p>
+      <p>Email: info@bountifulfoods.com</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About Us</h1>
+      <div>
+        <h2>Our History</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, nisl a iaculis eleifend, dui diam
+          pellentesque ligula, at feugiat lectus lorem et erat. In eu ultrices nisi. Aenean ultrices turpis eu risus
+          cursus, sed dignissim lectus blandit. Fusce non diam orci. Nullam sed nunc at enim interdum sollicitudin.
+          Curabitur lacinia augue a varius viverra.</p>
+        <p>Integer consectetur efficitur lectus, id aliquam purus. Quisque ut diam nec metus vehicula varius at sit amet
+          mi. Nulla et ipsum et ex pulvinar lobortis non at elit. Nam lacinia velit justo, ac pellentesque arcu
+          vulputate vitae. In at lobortis erat. Nam a mauris a metus pulvinar fermentum. Suspendisse potenti. Proin in
+          feugiat mauris.</p>
+      </div>
+
+      <div>
+        <h2>Contact Information</h2>
+        <p>1234 Main Street, Carlsbad, California</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@bountifulfoods.com</p>
+      </div>
+
+      <div>
+        <h2>Location</h2>
+        <div id="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last modified: <span id="last-modified"></span></p>
+    <p><a href="attribution.html">Resource/Attribution</a></p>
+  </footer>
+
+  <!-- Google Maps API script -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF6EoUH2SFDYYMEsSgl28VabC5mWATfSY&callback=initMap" async defer></script>
+  <script>
+    // Initialize and display the Google Map
+    function initMap() {
+      const location = { lat: 33.158093, lng: -117.350594 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location,
+      });
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  </script>
+  <script src="bountiful.js" defer></script>
+</body>
+
+</html>
