@@ -6,9 +6,13 @@
     margin: 0 auto;
   }
   
-  nav ul.menu {
-    display: inline-block;
+  
+
+  .social-media {
+    display: flex;
+    align-items: center;
   }
+  
   
   .social-media {
     display: inline-block;
@@ -28,16 +32,17 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  #hamburgerButttn {
-    display: block;
+  #hamburgerButtton {
+    display: none;
   }
 
   #primaryNav {
-    display: none;
+    display: block;
   }
 
   .navigation {
     grid-column: 2/3;
+    text-align: right;
   }
 
   /* Main */

@@ -9,12 +9,12 @@ currentDateElement.textContent = new Date().toLocaleDateString('en-US', {
   month: 'long',
   year: 'numeric'
 });
-document.querySelector('header .header-container').appendChild(currentDateElement);
+document.querySelector('header .header-container .navigation').insertAdjacentElement('afterend', currentDateElement);
 
 // Toggle menu on hamburger button click
 document.addEventListener('DOMContentLoaded', function() {
   
-const hamburgerButton = document.getElementById('.hamburgerButton');
+const hamburgerButton = document.getElementById('hamburgerButton');
   const primaryNav = document.getElementById('primaryNav');
     hamburgerButton.addEventListener('click',function () {
     primaryNav.classList.toggle('open');
@@ -120,5 +120,4 @@ function preloadImage(img) {
 
 images.forEach(image => {
     imgObserver.observe(image);
-});
 });
