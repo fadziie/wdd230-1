@@ -82,4 +82,7 @@ function handleFormSubmit(event) {
   
   // Add event listener to the form submit button
   document.getElementById('drink-form').addEventListener('submit', handleFormSubmit);
+
+  var currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
   

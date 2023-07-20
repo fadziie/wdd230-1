@@ -1,0 +1,46 @@
+{
+    "fruits": [
+      {
+        "name": "Apple",
+        "carbohydrates": 25,
+        "protein": 0.5,
+        "fat": 0.3,
+        "sugar": 19,
+        "calories": 95
+      },
+      {
+        "name": "Banana",
+        "carbohydrates": 27,
+        "protein": 1.3,
+        "fat": 0.2,
+        "sugar": 14,
+        "calories": 105
+      },
+      {
+        "name": "Orange",
+        "carbohydrates": 12,
+        "protein": 1,
+        "fat": 0.2,
+        "sugar": 9,
+        "calories": 62
+      },
+      {
+        "name": "Grapes",
+        "carbohydrates": 16,
+        "protein": 0.6,
+        "fat": 0.2,
+        "sugar": 16,
+        "calories": 69
+      },
+      {
+        "name": "Strawberry",
+        "carbohydrates": 8,
+        "protein": 0.7,
+        "fat": 0.3,
+        "sugar": 4.9,
+        "calories": 29
+      }
+    
+    ]
+  }
+  
