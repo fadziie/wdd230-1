@@ -12,14 +12,26 @@ currentDateElement.textContent = new Date().toLocaleDateString('en-US', {
 document.querySelector('header .header-container .navigation').insertAdjacentElement('afterend', currentDateElement);
 
 // Toggle menu on hamburger button click
+// Toggle menu on hamburger button click
 document.addEventListener('DOMContentLoaded', function() {
-  
-const hamburgerButton = document.getElementById('hamburgerButton');
+  const hamburgerButton = document.getElementById('hamburgerButton');
   const primaryNav = document.getElementById('primaryNav');
-    hamburgerButton.addEventListener('click',function () {
+
+  // Function to reset the navigation menu
+  function resetNav() {
+    primaryNav.classList.remove('open');
+  }
+
+  hamburgerButton.addEventListener('click', function() {
     primaryNav.classList.toggle('open');
   });
+
+  // Close the navigation menu on menu item click (for small and medium viewports)
+  const menuItems = document.querySelectorAll('.menu li a');
+  menuItems.forEach(item => {
+    item.addEventListener('click', resetNav);
   });
+});
 
 // Highlight current menu item on hover
 const menuItems = document.querySelectorAll('.menu li a');
@@ -29,8 +41,8 @@ menuItems.forEach(item => {
     menuItems.forEach(item => item.classList.remove('highlight'));
     item.classList.add('highlight');
   });
+});
 
-  item
 
 
 // Set dynamic year in the footer
@@ -96,7 +108,7 @@ function lazyLoad() {
 window.addEventListener('scroll', lazyLoad);
 window.addEventListener('resize', lazyLoad);
 window.addEventListener('orientationchange', lazyLoad);
-});
+
 
 const imgObserver = new IntersectionObserver((entries, imgObserver)=>{
     entries.forEach(entry =>{

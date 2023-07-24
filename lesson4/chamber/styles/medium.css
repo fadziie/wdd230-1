@@ -18,7 +18,7 @@
     display: inline-block;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     nav ul.menu {
       display: none;
     }
@@ -36,9 +36,35 @@
     display: none;
   }
 
-  #primaryNav {
-    display: block;
+  #primaryNav ul {
+    display: flex;
+    align-items: center;
   }
+
+  nav a {
+    border: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  nav a.menu {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a.menu:hover {
+    color: white;
+    background-color: rgb(14, 14, 121);
+  }
+
+  nav a.highlight {
+    background-color: #777;
+    color: white;
+  }
+
 
   .navigation {
     grid-column: 2/3;

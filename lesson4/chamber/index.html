@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chamber of Commerce Home Page Knox Tafadzwa Mangwiro WDD 230: Web Frontend Development at BYU Idaho">
-  <title>Durban Chamber of Commerce</title>
+  <title>Durban Chamber of Commerce Home Page</title>
   <link rel="stylesheet" href="styles/normalize.css" >
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/medium.css">
   <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/large.css">
   <link rel="shortcut icon" href="images/favicon.ico" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="banner"></div>
@@ -23,19 +24,23 @@
       <h1 class="site-name">Durban Chamber of Commerce</h1>
       <nav id="primaryNav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href='join.html'>Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="menu">Home</a></li>
+          <li><a href="discover.html" class="menu">Discover</a></li>
+          <li><a href="directory.html" class="menu">Directory</a></li>
+          <li><a href='join.html' class="menu">Join</a></li>
+          <li><a href="contact.html" class="menu">Contact</a></li>
           </ul>
       </nav>
       <div class="navigation">
         <div class="social-media">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="facebook" >
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin.png" alt="linkedin" >
+        </a>
+          </div>
           <button id="hamburgerButton"> &#9776;</button>
-      </div>
     </div>
       
       </header>
@@ -45,7 +50,7 @@
         <div class="hero-overlay">
           <h2 class="hero-title">​A Place That Is Very Far Away.</h2>
           <p class="hero-subtitle">Join us for exciting events and more!</p>
-          <a href="#" class="hero_button">Join</a>
+          <a href="join.html" class="hero_button">Join</a>
           </div>
           <picture>
               <source media="(max-width: 600px)" srcset="images/wdd230-org_small.webp">

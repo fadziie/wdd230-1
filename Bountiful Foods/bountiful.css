@@ -1,8 +1,14 @@
 /* Reset some default styles */
   
   body {
+    max-width: 1440px;
+    min-width: 350px;
+    margin: 0 ;
+    display: block;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
+    box-sizing: border-box;
+    
   }
   
   header {
@@ -93,6 +99,11 @@
     color: #000000;
     text-decoration: none;
   }
+
+  #main .img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
   
   #home .weather-card p,
   #home .specialty-drinks p {
@@ -110,6 +121,8 @@
   
   .specialty-drinks {
     margin-bottom: 30px;
+    background-color: #333;
+    color: #ffe789;
   }
   
   footer {
@@ -127,8 +140,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000;
     background-color: #fff;
-    margin: 0;
-    padding: 0;
+  
   }
   
   h1, h2 {
@@ -280,6 +292,9 @@ button {
     border: none;
     cursor: pointer;
   }
+  button:hover {
+    background-color: #ffdbb3; /* Lighter background color on hover */
+  }
 
   button[type="submit"] {
     background-color: #702fa7; /* Submit button background color */
@@ -324,4 +339,7 @@ button {
   #about #resources {
     /* Resources section styles */
   }
+
+  
+
   

@@ -22,16 +22,11 @@ body {
     padding: 20px;
   }
   
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   
-  }
 
   
   .logo img {
-    flex:0 0 50px;
+    width: 100px;
   }
   
   .site-name {
@@ -48,11 +43,14 @@ body {
     align-items: center;
   }
 
-  
+  .social-media img{
+    width: 30px;
+  }
   
   nav a {
     color: #fff;
     text-decoration: none;
+    width: 30px;
   }
 
     
@@ -70,13 +68,18 @@ body {
       text-decoration: none;
       transition: color 0.3s;
     }
+
+    nav a.menu {
+      color: #fff;
+      text-decoration: none;
+    }
   
-    nav a:hover {
+    nav a.menu:hover {
       color:white;
       background-color: rgb(14, 14, 121);
     }
 
-    nav a:active {
+    nav a.highlight {
       background-color: #777;
       color: white;
     }
@@ -101,9 +104,13 @@ body {
     background-color: aqua;
   }
   .current-date{
-    flex:0 0 200px;
+    grid-column: 1/4;
+    height: 40px;
     text-align: center;
     background-color: aqua;
+    color:#000;
+    margin-right: -100px;
+    box-sizing: border-box;
   }
 
   #hamburgerButton {
@@ -299,12 +306,7 @@ body {
 
 /* Grid Layout for join*/
 
-.form-section {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
+
 form {
   background-color: #f2f2f2;
   padding: 20px;
