@@ -184,18 +184,28 @@ header {
     grid-row: 3/4;
   }
 
-  .form-section {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  #daysBetweenVisits{
+    margin: 0;
   }
- .application-form{
-  grid-column: 1/2;
- }
- .benefits-section{
-  grid-column: 2/3;
- }
+
+  .form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between the columns */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: start;
+  }
+  
+  .application-form {
+    grid-column:  1 / 2; /* The form occupies the first row and first column */
+  }
+  
+  .benefits-section {
+    grid-column: 2 / 3; /* The benefits section occupies the first row and second column */
+    
+  }
   @media only screen and (min-width: 992px) {
     /* Large View */
     body {

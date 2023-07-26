@@ -86,29 +86,15 @@ if (lastVisit) {
 localStorage.setItem('lastVisit', currentTimestamp.toString());
 
 
-// Lazy Load Images
-const images = document.querySelectorAll('img[data-src]');
 
-function lazyLoad() {
-  images.forEach((img) => {
-    if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0 && getComputedStyle(img).display !== 'none') {
-      img.src = img.dataset.src;
-      img.removeAttribute('data-src');
-    }
-  });
 
-  // Remove event listener once all images are loaded
-  if (images.length === 0) {
-    window.removeEventListener('scroll', lazyLoad);
-    window.removeEventListener('resize', lazyLoad);
-    window.removeEventListener('orientationchange', lazyLoad);
-  }
-}
+const imgOptions = {
+  root: null, // Set to null for the viewport
+  rootMargin: '0px', // Adjust as needed to trigger the intersection earlier or later
+  threshold: 0.1, // Adjust as needed (0 to 1) for the percentage of image visibility required to trigger the intersection
+};
 
-window.addEventListener('scroll', lazyLoad);
-window.addEventListener('resize', lazyLoad);
-window.addEventListener('orientationchange', lazyLoad);
-
+const images = document.querySelectorAll('img[data-src]'); // Define the 'images' variable
 
 const imgObserver = new IntersectionObserver((entries, imgObserver)=>{
     entries.forEach(entry =>{
